@@ -1,0 +1,50 @@
+.Room {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  max-width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+  }
+
+  &:hover{
+    .RoomCover {
+      opacity: 1;
+    }
+  }
+}
+
+.RoomCover {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(#000, .75);
+  color: #fff;
+  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+  padding: 70px 20px 20px;
+
+  p {
+    color: #fff;
+  }
+
+  > a {
+    background: rgba(#fff, .3);
+    line-height: 2em;
+    padding: 0 .5em;
+    color: #fff;
+
+    &:hover {
+      text-decoration: none;
+    background: rgba(#fff, .2);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.Tag {
+  font-size: 15px;
+  line-height: 1.8em;
+  height: 1.8em;
+  background: $brand-primary;
+  -webkit-transition: background .1s ease-in-out;
+  transition: background .1s ease-in-out;
+  color: #fff;
+  padding: 0 7px;
+  margin-right: 8px;
+
+  &:hover {
+    color: #fff;
+    background: #777;
+    text-decoration: none;
+  }
+}
+
+.Tag-selected {
+  background: #777;
+}

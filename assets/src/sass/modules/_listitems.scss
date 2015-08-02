@@ -1,0 +1,12 @@
+.ListItem {
+  position: relative;
+  padding-left: 100px;
+}
+
+.ListItem-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 60px;
+  line-height: 70px;
+}

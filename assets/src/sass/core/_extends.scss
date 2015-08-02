@@ -1,0 +1,51 @@
+
+%bs-cover {
+  background: {
+    repeat: no-repeat;
+    attachment: fixed;
+    position: center center;
+  }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+%bs-transition {
+  transition: background 0.3s ease, opacity 0.3s ease, border-width .2s ease-in-out;
+}
+
+%margin-transition {
+  transition: margin 0.3s ease;
+}
+
+%opacity-transition {
+  transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+%mcf, .mcf {
+  *zoom: 1;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%list-reset, .list-reset {
+  margin: 0;
+  list-style: none;
+  li {
+    padding: 0;
+    background-image: none;
+  }
+}
+
+%list-no-bullets, .list-no-bullets {
+  margin-left: 0;
+  list-style: none;
+  > li {
+    padding: 0;
+    background-image: none;
+  }
+}

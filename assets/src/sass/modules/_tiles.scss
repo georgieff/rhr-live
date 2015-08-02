@@ -1,0 +1,46 @@
+.Tile {
+  position: relative;
+  background: #fff;
+  padding: 28px 0 40px;
+  margin-bottom: 20px;
+
+  h2,
+  h6,
+  p {
+    padding: 0 20px;
+  }
+
+  h2 {
+    margin-bottom: 35px;
+  }
+
+  img {
+    max-width: 100%;
+    margin-bottom: 40px
+  }
+
+  &:hover .ReadMore {
+    opacity: 1;
+  }
+
+  .ReadMore {
+    position: absolute;
+    line-height: 36px;
+    height: 36px;
+    bottom: 0;
+    right: 0;
+    font-size: 17px;
+    background: $brand-primary;
+    padding: 0 20px;
+    color: #fff;
+    opacity: 0;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      text-decoration: none;
+      background: darken($brand-primary, 10%);
+    }
+  }
+}
+

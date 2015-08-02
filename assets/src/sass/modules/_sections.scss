@@ -1,0 +1,102 @@
+.Section {
+  padding: 65px 0 70px;
+
+  &.background {
+    position: relative;
+    min-height: 630px;
+    background-image: url('../../../images/home.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      // background-image: url('../img/patt.png');
+      background: #000;
+      opacity: .22;
+    }
+
+    img {
+      position: relative;
+      z-index: 5;
+    }
+
+    h2 {
+      color: #fff;
+    }
+  }
+
+  &.testimonials {
+    background-image: url('../../../images/home.jpg');
+  }
+
+  + .Section.move-up .container {
+    margin-top: -220px;
+  }
+
+  &.cream {
+    background-color: #fbfbfb;
+  }
+
+  &.gallery {
+    background-image: url('../../../images/gallery_background.jpg');
+    background-size: cover;
+    color: #fff;
+    height: auto;
+  }
+
+  &.small {
+    min-height: 360px;
+  }
+
+  &.medium {
+    min-height: 470px;
+  }
+
+  &.white {
+    background-color: #fff;
+  }
+
+}
+
+hr {
+  color : #e9e3d8;
+  margin: 25px 0;
+}
+
+hr + .row {
+  padding-top: 10px;
+}
+
+.service {
+  position: relative;
+
+  > img + a,
+  > img + a + p {
+      margin-left: 85px;
+  }
+
+  > img + a {
+    margin-bottom: 10px;
+  }
+
+  > img {
+    position: absolute;
+  }
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: $screen-sm-min){
+  .container {
+    max-width: 80%;
+  }
+}

@@ -1,0 +1,76 @@
+#mod {
+
+  .mpr {
+    position: relative;
+  }
+
+  .mpa {
+    position: absolute;
+  }
+
+  .mtac {
+    text-align: center;
+  }
+
+  .mtal {
+    text-align: left;
+  }
+
+  .mtar {
+    text-align: right;
+  }
+
+  .mnp {
+    padding: 0;
+  }
+
+  .mnm {
+    margin: 0;
+  }
+
+  .mdb {
+    display: block;
+  }
+
+  .mdib {
+    display: inline-block;
+  }
+
+  .mdi {
+    display: inline;
+  }
+
+  .mvat {
+    vertical-align: top;
+  }
+
+  .mttu {
+    text-transform: uppercase;
+  }
+
+  .mvam {
+    vertical-align: middle;
+  }
+
+  .mvab {
+    vertical-align: bottom;
+  }
+
+  @for $i from 1 through 10 {
+    .mmb#{$i} {
+      margin-bottom: 10px*$i;
+    }
+  }
+
+  @for $i from 1 through 10 {
+    .mmt#{$i} {
+      margin-top: 10px*$i;
+    }
+  }
+
+  @for $i from 1 through 10 {
+    .mpb#{$i} {
+      padding-bottom: 10px*$i;
+    }
+  }
+}
