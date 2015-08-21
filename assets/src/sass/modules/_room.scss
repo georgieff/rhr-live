@@ -30,11 +30,22 @@
   color: #fff;
   -webkit-transition: opacity .2s ease-in-out;
   transition: opacity .2s ease-in-out;
-  padding: 70px 20px 20px;
 
   p {
     color: #fff;
   }
+}
+.RoomCover-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.RoomCover-content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px;
 
   > a {
     background: rgba(#fff, .3);
@@ -44,7 +55,7 @@
 
     &:hover {
       text-decoration: none;
-    background: rgba(#fff, .2);
+      background: rgba(#fff, .2);
     }
   }
 }

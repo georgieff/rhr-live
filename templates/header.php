@@ -14,10 +14,10 @@
 
       <nav>
         <a href="index.php" <?php if ($page == 'home'): ?>class="selected"<?php endif; ?> >Main</a>
-        <a href="about.php">About us</a>
-        <a href="#">Booking</a>
-        <a href="#">Latest News</a>
-        <a href="#">Contacts</a>
+        <a href="about.php" <?php if ($page == 'about'): ?>class="selected"<?php endif; ?> >About us</a>
+        <a href="rooms.php" <?php if ($page == 'rooms'): ?>class="selected"<?php endif; ?> >Rooms</a>
+        <a href="#" <?php if ($page == 'news'): ?>class="selected"<?php endif; ?> >Latest News</a>
+        <a href="#" <?php if ($page == 'contacts'): ?>class="selected"<?php endif; ?> >Contacts</a>
       </nav>
 
       <div class="Social">
